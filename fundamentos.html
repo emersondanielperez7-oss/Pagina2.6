@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fundamentos - Bases de Datos</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,500&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header>
+<nav>
+<a class="brand" href="index.html">
+<span class="brand-mark"></span>
+      esquema.db
+    </a>
+<div class="nav-links">
+<a href="fundamentos.html">Fundamentos</a>
+<a href="modelos.html">Modelos</a>
+<a href="glosario.html">Diccionario</a>
+<a href="ciclo.html">Ciclo de vida</a>
+</div>
+<a class="nav-cta" href="glosario.html">DICCIONARIO A–Z</a>
+</nav>
+</header>
+
+<main style="padding-top:100px;">
+<section id="fundamentos">
+<div class="wrap">
+<div class="section-head reveal">
+<div class="eyebrow">Fundamentos</div>
+<h2>¿Qué es realmente una base de datos?</h2>
+<p>Más que un archivo donde se guardan cosas: es un sistema con reglas, relaciones y garantías sobre cómo esa información se lee y se escribe.</p>
+</div>
+<div class="intro">
+<div class="intro-copy reveal">
+<h3>Una colección con reglas</h3>
+<p>Una base de datos almacena información de forma organizada para que pueda consultarse, modificarse y relacionarse de manera eficiente. A diferencia de una hoja de cálculo, está pensada para que muchas personas y sistemas trabajen con esos datos al mismo tiempo, sin perder consistencia.</p>
+<p>Detrás de cada consulta hay un motor —el sistema gestor de bases de datos (SGBD)— que decide cómo guardar, indexar y proteger cada registro. Ese motor es el que permite que una tienda online no pierda un pedido aunque mil personas compren a la vez.</p>
+</div>
+<div class="stack-list reveal">
+<div class="stack-item">
+<span class="stack-num">01</span>
+<div>
+<h4>Persistencia</h4>
+<p>Los datos sobreviven al cierre de la aplicación: quedan guardados en disco, no solo en memoria.</p>
+</div>
+</div>
+<div class="stack-item">
+<span class="stack-num">02</span>
+<div>
+<h4>Integridad</h4>
+<p>El sistema impide estados inconsistentes: una venta no puede existir sin un producto que la respalde.</p>
+</div>
+</div>
+<div class="stack-item">
+<span class="stack-num">03</span>
+<div>
+<h4>Concurrencia</h4>
+<p>Varias personas pueden leer y escribir a la vez sin pisarse los datos entre sí.</p>
+</div>
+</div>
+<div class="stack-item">
+<span class="stack-num">04</span>
+<div>
+<h4>Seguridad</h4>
+<p>El acceso se controla por permisos: cada usuario ve y modifica solo lo que le corresponde.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+</main>
+
+<footer>
+<div class="wrap footer-inner">
+<span class="brand"><span class="brand-mark" style="width:22px;height:22px;"></span>esquema.db</span>
+<span>Guía de fundamentos de bases de datos · 2026</span>
+</div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
