@@ -1,0 +1,1167 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Diccionario - Bases de Datos y Arquitectura de Software</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,500&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+<nav>
+<a class="brand" href="index.html">
+<span class="brand-mark"></span>
+      esquema.db
+    </a>
+<div class="nav-links">
+<a href="fundamentos.html">Fundamentos</a>
+<a href="modelos.html">Modelos</a>
+<a href="glosario.html">Diccionario</a>
+<a href="ciclo.html">Ciclo de vida</a>
+</div>
+</nav>
+</header>
+
+<main style="padding-top:100px;">
+<section id="glosario">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <div class="eyebrow">Diccionario alfabético</div>
+      <h2>Base de datos y arquitectura de software, letra por letra</h2>
+      <p>Explora los términos en orden alfabético. Cada letra abre su propia tabla con el término en inglés, su equivalente en español, una definición clara y una pequeña ilustración visual.</p>
+    </div>
+
+    <div class="dictionary-shell reveal">
+      <div class="glossary-bar">
+        <div class="glossary-bar-left">
+          <span class="terminal-dots">
+            <span class="dot red"></span><span class="dot yellow"></span><span class="dot green"></span>
+          </span>
+          diccionario_az.sql
+        </div>
+        <div class="search-box">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"></circle><path d="M21 21l-4.3-4.3" stroke-linecap="round"></path></svg>
+          <input id="dictionarySearch" type="text" placeholder="Buscar término o definición…" autocomplete="off">
+        </div>
+      </div>
+
+      <div class="alphabet-bar" id="alphabetBar">
+        <button class="alpha-btn active" data-letter="A">A</button>
+<button class="alpha-btn" data-letter="B">B</button>
+<button class="alpha-btn" data-letter="C">C</button>
+<button class="alpha-btn" data-letter="D">D</button>
+<button class="alpha-btn" data-letter="E">E</button>
+<button class="alpha-btn" data-letter="F">F</button>
+<button class="alpha-btn" data-letter="G">G</button>
+<button class="alpha-btn" data-letter="H">H</button>
+<button class="alpha-btn" data-letter="I">I</button>
+<button class="alpha-btn" data-letter="J">J</button>
+<button class="alpha-btn" data-letter="K">K</button>
+<button class="alpha-btn" data-letter="L">L</button>
+<button class="alpha-btn" data-letter="M">M</button>
+<button class="alpha-btn" data-letter="N">N</button>
+<button class="alpha-btn" data-letter="O">O</button>
+<button class="alpha-btn" data-letter="P">P</button>
+<button class="alpha-btn" data-letter="Q">Q</button>
+<button class="alpha-btn" data-letter="R">R</button>
+<button class="alpha-btn" data-letter="S">S</button>
+<button class="alpha-btn" data-letter="T">T</button>
+<button class="alpha-btn" data-letter="U">U</button>
+<button class="alpha-btn" data-letter="V">V</button>
+<button class="alpha-btn" data-letter="W">W</button>
+<button class="alpha-btn" data-letter="X">X</button>
+<button class="alpha-btn" data-letter="Y">Y</button>
+<button class="alpha-btn" data-letter="Z">Z</button>
+<button class="alpha-btn alpha-all" data-letter="todos">Todos</button>
+      </div>
+
+      <div class="dictionary-meta">
+        <span id="dictionaryCount">26 términos · 1 letra visible</span>
+        <span>Temática: bases de datos y arquitectura de software</span>
+      </div>
+
+      <div class="dictionary-panels" id="dictionaryPanels">
+      
+      <section class="dict-panel" data-letter="A" >
+        <div class="dict-panel-head">
+          <div>
+            <div class="dict-letter">A</div>
+            <p class="dict-subtitle">Términos que comienzan con la letra A.</p>
+          </div>
+        </div>
+        <div class="table-scroll">
+          <table class="dict-table">
+            <thead>
+              <tr>
+                <th>#</th>
+                <th>Término (Inglés)</th>
+                <th>Término (Español)</th>
+                <th>Definición</th>
+                <th>Ilustración</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr class="dictionary-row">
+      <td class="row-id">01</td>
+      <td>
+        <div class="concept-name">API Gateway<span class="mono-tag">Arquitectura de software</span></div>
+      </td>
+      <td>
+        <div class="term-es">Pasarela de API<span class="mono-tag">Traducción al español</span></div>
+      </td>
+      <td class="desc-cell">Punto de entrada único que recibe solicitudes de clientes y las enruta al servicio correcto. También puede aplicar seguridad, autenticación y control de tráfico.</td>
+      <td>
+        <div class="illus-card">
+          <span class="illus-icon">API</span>
+          <span class="illus-caption">Cliente → Gateway → Servicios</span>
+        </div>
+      </td>
+    </tr>
+
+            </tbody>
+             <tbody>
+              <tr class="dictionary-row">
+      <td class="row-id">02</td>
+      <td>
+        <div class="concept-name">Asking<span class="mono-tag">Arquitectura de software</span></div>
+      </td>
+      <td>
+        <div class="term-es">Pregunta
+          
+      </td>
+      <td class="desc-cell">Punto de entrada único que recibe solicitudes de clientes y las enruta al servicio correcto. También puede aplicar seguridad, autenticación y control de tráfico.</td>
+      <td>
+        <div class="illus-card">
+          <span class="illus-icon">API</span>
+          <span class="illus-caption">Cliente → Gateway → Servicios</span>
+        </div>
+      </td>
+    </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+      
+    
+      <section class="dict-panel" data-letter="B" style="display:none;">
+        <div class="dict-panel-head">
+          <div>
+            <div class="dict-letter">B</div>
+            <p class="dict-subtitle">Términos que comienzan con la letra B.</p>
+          </div>
+        </div>
+        <div class="table-scroll">
+          <table class="dict-table">
+            <thead>
+              <tr>
+                <th>#</th>
+                <th>Término (Inglés)</th>
+                <th>Término (Español)</th>
+                <th>Definición</th>
+                <th>Ilustración</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr class="dictionary-row">
+      <td class="row-id">01</td>
+      <td>
+        <div class="concept-name">Backup<span class="mono-tag">Base de datos</span></div>
+      </td>
+      <td>
+        <div class="term-es">Respaldo<span class="mono-tag">Traducción al español</span></div>
+      </td>
+      <td class="desc-cell">Copia de seguridad de los datos que permite restaurar la información en caso de fallos, borrados accidentales o desastres.</td>
+      <td>
+        <div class="illus-card">
+          <span class="illus-icon">BKP</span>
+          <span class="illus-caption">Copia segura de la base</span>
+        </div>
+      </td>
+    </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+    
+      <section class="dict-panel" data-letter="C" style="display:none;">
+        <div class="dict-panel-head">
+          <div>
+            <div class="dict-letter">C</div>
+            <p class="dict-subtitle">Términos que comienzan con la letra C.</p>
+          </div>
+        </div>
+        <div class="table-scroll">
+          <table class="dict-table">
+            <thead>
+              <tr>
+                <th>#</th>
+                <th>Término (Inglés)</th>
+                <th>Término (Español)</th>
+                <th>Definición</th>
+                <th>Ilustración</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr class="dictionary-row">
+      <td class="row-id">01</td>
+      <td>
+        <div class="concept-name">Cache<span class="mono-tag">Arquitectura de software</span></div>
+      </td>
+      <td>
+        <div class="term-es">Caché<span class="mono-tag">Traducción al español</span></div>
+      </td>
+      <td class="desc-cell">Memoria temporal que guarda datos o respuestas frecuentes para acelerar el acceso y reducir la carga sobre la base de datos o los servicios.</td>
+      <td>
+        <div class="illus-card">
+          <span class="illus-icon">CCH</span>
+          <span class="illus-caption">Acceso rápido a datos</span>
+        </div>
+      </td>
+    </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+    
+      <section class="dict-panel" data-letter="D" style="display:none;">
+        <div class="dict-panel-head">
+          <div>
+            <div class="dict-letter">D</div>
+            <p class="dict-subtitle">Términos que comienzan con la letra D.</p>
+          </div>
+        </div>
+        <div class="table-scroll">
+          <table class="dict-table">
+            <thead>
+              <tr>
+                <th>#</th>
+                <th>Término (Inglés)</th>
+                <th>Término (Español)</th>
+                <th>Definición</th>
+                <th>Ilustración</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr class="dictionary-row">
+      <td class="row-id">01</td>
+      <td>
+        <div class="concept-name">Database<span class="mono-tag">Base de datos</span></div>
+      </td>
+      <td>
+        <div class="term-es">Base de datos<span class="mono-tag">Traducción al español</span></div>
+      </td>
+      <td class="desc-cell">Conjunto organizado de datos relacionados que se almacenan y administran para facilitar su consulta, actualización y protección.</td>
+      <td>
+        <div class="illus-card">
+          <span class="illus-icon">DB</span>
+          <span class="illus-caption">Datos organizados</span>
+        </div>
+      </td>
+    </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+    
+      <section class="dict-panel" data-letter="E" style="display:none;">
+        <div class="dict-panel-head">
+          <div>
+            <div class="dict-letter">E</div>
+            <p class="dict-subtitle">Términos que comienzan con la letra E.</p>
+          </div>
+        </div>
+        <div class="table-scroll">
+          <table class="dict-table">
+            <thead>
+              <tr>
+                <th>#</th>
+                <th>Término (Inglés)</th>
+                <th>Término (Español)</th>
+                <th>Definición</th>
+                <th>Ilustración</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr class="dictionary-row">
+      <td class="row-id">01</td>
+      <td>
+        <div class="concept-name">Event-Driven Architecture<span class="mono-tag">Arquitectura de software</span></div>
+      </td>
+      <td>
+        <div class="term-es">Arquitectura dirigida por eventos<span class="mono-tag">Traducción al español</span></div>
+      </td>
+      <td class="desc-cell">Modelo donde los componentes reaccionan a eventos generados por otros componentes, favoreciendo el desacoplamiento y la comunicación asíncrona.</td>
+      <td>
+        <div class="illus-card">
+          <span class="illus-icon">EVT</span>
+          <span class="illus-caption">Productor → Evento → Consumidor</span>
+        </div>
+      </td>
+    </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+    
+      <section class="dict-panel" data-letter="F" style="display:none;">
+        <div class="dict-panel-head">
+          <div>
+            <div class="dict-letter">F</div>
+            <p class="dict-subtitle">Términos que comienzan con la letra F.</p>
+          </div>
+        </div>
+        <div class="table-scroll">
+          <table class="dict-table">
+            <thead>
+              <tr>
+                <th>#</th>
+                <th>Término (Inglés)</th>
+                <th>Término (Español)</th>
+                <th>Definición</th>
+                <th>Ilustración</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr class="dictionary-row">
+      <td class="row-id">01</td>
+      <td>
+        <div class="concept-name">Foreign Key<span class="mono-tag">Base de datos</span></div>
+      </td>
+      <td>
+        <div class="term-es">Clave foránea<span class="mono-tag">Traducción al español</span></div>
+      </td>
+      <td class="desc-cell">Campo que enlaza una tabla con otra al referenciar la clave primaria de la tabla relacionada. Ayuda a mantener la integridad referencial.</td>
+      <td>
+        <div class="illus-card">
+          <span class="illus-icon">FK</span>
+          <span class="illus-caption">Relación entre tablas</span>
+        </div>
+      </td>
+    </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+    
+      <section class="dict-panel" data-letter="G" style="display:none;">
+        <div class="dict-panel-head">
+          <div>
+            <div class="dict-letter">G</div>
+            <p class="dict-subtitle">Términos que comienzan con la letra G.</p>
+          </div>
+        </div>
+        <div class="table-scroll">
+          <table class="dict-table">
+            <thead>
+              <tr>
+                <th>#</th>
+                <th>Término (Inglés)</th>
+                <th>Término (Español)</th>
+                <th>Definición</th>
+                <th>Ilustración</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr class="dictionary-row">
+      <td class="row-id">01</td>
+      <td>
+        <div class="concept-name">Graph Database<span class="mono-tag">Base de datos</span></div>
+      </td>
+      <td>
+        <div class="term-es">Base de datos de grafos<span class="mono-tag">Traducción al español</span></div>
+      </td>
+      <td class="desc-cell">Tipo de base de datos que modela la información mediante nodos y relaciones, ideal para redes sociales, rutas o sistemas de recomendación.</td>
+      <td>
+        <div class="illus-card">
+          <span class="illus-icon">GRF</span>
+          <span class="illus-caption">Nodos y conexiones</span>
+        </div>
+      </td>
+    </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+    
+      <section class="dict-panel" data-letter="H" style="display:none;">
+        <div class="dict-panel-head">
+          <div>
+            <div class="dict-letter">H</div>
+            <p class="dict-subtitle">Términos que comienzan con la letra H.</p>
+          </div>
+        </div>
+        <div class="table-scroll">
+          <table class="dict-table">
+            <thead>
+              <tr>
+                <th>#</th>
+                <th>Término (Inglés)</th>
+                <th>Término (Español)</th>
+                <th>Definición</th>
+                <th>Ilustración</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr class="dictionary-row">
+      <td class="row-id">01</td>
+      <td>
+        <div class="concept-name">Hexagonal Architecture<span class="mono-tag">Arquitectura de software</span></div>
+      </td>
+      <td>
+        <div class="term-es">Arquitectura hexagonal<span class="mono-tag">Traducción al español</span></div>
+      </td>
+      <td class="desc-cell">Estilo arquitectónico que separa la lógica del negocio de los detalles externos, usando puertos y adaptadores para facilitar pruebas y mantenimiento.</td>
+      <td>
+        <div class="illus-card">
+          <span class="illus-icon">HEX</span>
+          <span class="illus-caption">Núcleo + adaptadores</span>
+        </div>
+      </td>
+    </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+    
+      <section class="dict-panel" data-letter="I" style="display:none;">
+        <div class="dict-panel-head">
+          <div>
+            <div class="dict-letter">I</div>
+            <p class="dict-subtitle">Términos que comienzan con la letra I.</p>
+          </div>
+        </div>
+        <div class="table-scroll">
+          <table class="dict-table">
+            <thead>
+              <tr>
+                <th>#</th>
+                <th>Término (Inglés)</th>
+                <th>Término (Español)</th>
+                <th>Definición</th>
+                <th>Ilustración</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr class="dictionary-row">
+      <td class="row-id">01</td>
+      <td>
+        <div class="concept-name">Index<span class="mono-tag">Base de datos</span></div>
+      </td>
+      <td>
+        <div class="term-es">Índice<span class="mono-tag">Traducción al español</span></div>
+      </td>
+      <td class="desc-cell">Estructura auxiliar que mejora la velocidad de búsqueda sobre una o varias columnas, aunque puede aumentar el espacio y el costo de escritura.</td>
+      <td>
+        <div class="illus-card">
+          <span class="illus-icon">IDX</span>
+          <span class="illus-caption">Búsqueda optimizada</span>
+        </div>
+      </td>
+    </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+    
+      <section class="dict-panel" data-letter="J" style="display:none;">
+        <div class="dict-panel-head">
+          <div>
+            <div class="dict-letter">J</div>
+            <p class="dict-subtitle">Términos que comienzan con la letra J.</p>
+          </div>
+        </div>
+        <div class="table-scroll">
+          <table class="dict-table">
+            <thead>
+              <tr>
+                <th>#</th>
+                <th>Término (Inglés)</th>
+                <th>Término (Español)</th>
+                <th>Definición</th>
+                <th>Ilustración</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr class="dictionary-row">
+      <td class="row-id">01</td>
+      <td>
+        <div class="concept-name">JOIN<span class="mono-tag">Base de datos</span></div>
+      </td>
+      <td>
+        <div class="term-es">Combinación de tablas<span class="mono-tag">Traducción al español</span></div>
+      </td>
+      <td class="desc-cell">Operación SQL que une filas de dos o más tablas según una condición de relación, permitiendo consultar información distribuida.</td>
+      <td>
+        <div class="illus-card">
+          <span class="illus-icon">JN</span>
+          <span class="illus-caption">Cruce de registros</span>
+        </div>
+      </td>
+    </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+    
+      <section class="dict-panel" data-letter="K" style="display:none;">
+        <div class="dict-panel-head">
+          <div>
+            <div class="dict-letter">K</div>
+            <p class="dict-subtitle">Términos que comienzan con la letra K.</p>
+          </div>
+        </div>
+        <div class="table-scroll">
+          <table class="dict-table">
+            <thead>
+              <tr>
+                <th>#</th>
+                <th>Término (Inglés)</th>
+                <th>Término (Español)</th>
+                <th>Definición</th>
+                <th>Ilustración</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr class="dictionary-row">
+      <td class="row-id">01</td>
+      <td>
+        <div class="concept-name">Key<span class="mono-tag">Base de datos</span></div>
+      </td>
+      <td>
+        <div class="term-es">Clave<span class="mono-tag">Traducción al español</span></div>
+      </td>
+      <td class="desc-cell">Atributo usado para identificar registros o relacionar tablas. Puede ser primaria, foránea, candidata o compuesta.</td>
+      <td>
+        <div class="illus-card">
+          <span class="illus-icon">KEY</span>
+          <span class="illus-caption">Identificación de datos</span>
+        </div>
+      </td>
+    </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+    
+      <section class="dict-panel" data-letter="L" style="display:none;">
+        <div class="dict-panel-head">
+          <div>
+            <div class="dict-letter">L</div>
+            <p class="dict-subtitle">Términos que comienzan con la letra L.</p>
+          </div>
+        </div>
+        <div class="table-scroll">
+          <table class="dict-table">
+            <thead>
+              <tr>
+                <th>#</th>
+                <th>Término (Inglés)</th>
+                <th>Término (Español)</th>
+                <th>Definición</th>
+                <th>Ilustración</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr class="dictionary-row">
+      <td class="row-id">01</td>
+      <td>
+        <div class="concept-name">Load Balancer<span class="mono-tag">Arquitectura de software</span></div>
+      </td>
+      <td>
+        <div class="term-es">Balanceador de carga<span class="mono-tag">Traducción al español</span></div>
+      </td>
+      <td class="desc-cell">Componente que distribuye solicitudes entre varios servidores o instancias para mejorar el rendimiento, la disponibilidad y la tolerancia a fallos.</td>
+      <td>
+        <div class="illus-card">
+          <span class="illus-icon">L/B</span>
+          <span class="illus-caption">Tráfico distribuido</span>
+        </div>
+      </td>
+    </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+    
+      <section class="dict-panel" data-letter="M" style="display:none;">
+        <div class="dict-panel-head">
+          <div>
+            <div class="dict-letter">M</div>
+            <p class="dict-subtitle">Términos que comienzan con la letra M.</p>
+          </div>
+        </div>
+        <div class="table-scroll">
+          <table class="dict-table">
+            <thead>
+              <tr>
+                <th>#</th>
+                <th>Término (Inglés)</th>
+                <th>Término (Español)</th>
+                <th>Definición</th>
+                <th>Ilustración</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr class="dictionary-row">
+      <td class="row-id">01</td>
+      <td>
+        <div class="concept-name">Microservice<span class="mono-tag">Arquitectura de software</span></div>
+      </td>
+      <td>
+        <div class="term-es">Microservicio<span class="mono-tag">Traducción al español</span></div>
+      </td>
+      <td class="desc-cell">Servicio pequeño y autónomo que cumple una función específica del sistema y se comunica con otros servicios mediante interfaces bien definidas.</td>
+      <td>
+        <div class="illus-card">
+          <span class="illus-icon">MS</span>
+          <span class="illus-caption">Servicios independientes</span>
+        </div>
+      </td>
+    </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+    
+      <section class="dict-panel" data-letter="N" style="display:none;">
+        <div class="dict-panel-head">
+          <div>
+            <div class="dict-letter">N</div>
+            <p class="dict-subtitle">Términos que comienzan con la letra N.</p>
+          </div>
+        </div>
+        <div class="table-scroll">
+          <table class="dict-table">
+            <thead>
+              <tr>
+                <th>#</th>
+                <th>Término (Inglés)</th>
+                <th>Término (Español)</th>
+                <th>Definición</th>
+                <th>Ilustración</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr class="dictionary-row">
+      <td class="row-id">01</td>
+      <td>
+        <div class="concept-name">Normalization<span class="mono-tag">Base de datos</span></div>
+      </td>
+      <td>
+        <div class="term-es">Normalización<span class="mono-tag">Traducción al español</span></div>
+      </td>
+      <td class="desc-cell">Proceso de diseño que reduce redundancia y dependencias no deseadas en las tablas, ayudando a evitar inconsistencias.</td>
+      <td>
+        <div class="illus-card">
+          <span class="illus-icon">NRM</span>
+          <span class="illus-caption">Orden lógico de tablas</span>
+        </div>
+      </td>
+    </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+    
+      <section class="dict-panel" data-letter="O" style="display:none;">
+        <div class="dict-panel-head">
+          <div>
+            <div class="dict-letter">O</div>
+            <p class="dict-subtitle">Términos que comienzan con la letra O.</p>
+          </div>
+        </div>
+        <div class="table-scroll">
+          <table class="dict-table">
+            <thead>
+              <tr>
+                <th>#</th>
+                <th>Término (Inglés)</th>
+                <th>Término (Español)</th>
+                <th>Definición</th>
+                <th>Ilustración</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr class="dictionary-row">
+      <td class="row-id">01</td>
+      <td>
+        <div class="concept-name">ORM<span class="mono-tag">Arquitectura de software</span></div>
+      </td>
+      <td>
+        <div class="term-es">Mapeo objeto-relacional<span class="mono-tag">Traducción al español</span></div>
+      </td>
+      <td class="desc-cell">Técnica o herramienta que conecta clases de un lenguaje de programación con tablas de una base de datos relacional, simplificando el acceso a datos.</td>
+      <td>
+        <div class="illus-card">
+          <span class="illus-icon">ORM</span>
+          <span class="illus-caption">Objetos ↔ tablas</span>
+        </div>
+      </td>
+    </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+    
+      <section class="dict-panel" data-letter="P" style="display:none;">
+        <div class="dict-panel-head">
+          <div>
+            <div class="dict-letter">P</div>
+            <p class="dict-subtitle">Términos que comienzan con la letra P.</p>
+          </div>
+        </div>
+        <div class="table-scroll">
+          <table class="dict-table">
+            <thead>
+              <tr>
+                <th>#</th>
+                <th>Término (Inglés)</th>
+                <th>Término (Español)</th>
+                <th>Definición</th>
+                <th>Ilustración</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr class="dictionary-row">
+      <td class="row-id">01</td>
+      <td>
+        <div class="concept-name">Primary Key<span class="mono-tag">Base de datos</span></div>
+      </td>
+      <td>
+        <div class="term-es">Clave primaria<span class="mono-tag">Traducción al español</span></div>
+      </td>
+      <td class="desc-cell">Campo único y no nulo que identifica cada fila de una tabla. Es la base para relacionar registros con otras tablas.</td>
+      <td>
+        <div class="illus-card">
+          <span class="illus-icon">PK</span>
+          <span class="illus-caption">Identificador único</span>
+        </div>
+      </td>
+    </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+    
+      <section class="dict-panel" data-letter="Q" style="display:none;">
+        <div class="dict-panel-head">
+          <div>
+            <div class="dict-letter">Q</div>
+            <p class="dict-subtitle">Términos que comienzan con la letra Q.</p>
+          </div>
+        </div>
+        <div class="table-scroll">
+          <table class="dict-table">
+            <thead>
+              <tr>
+                <th>#</th>
+                <th>Término (Inglés)</th>
+                <th>Término (Español)</th>
+                <th>Definición</th>
+                <th>Ilustración</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr class="dictionary-row">
+      <td class="row-id">01</td>
+      <td>
+        <div class="concept-name">Query<span class="mono-tag">Base de datos</span></div>
+      </td>
+      <td>
+        <div class="term-es">Consulta<span class="mono-tag">Traducción al español</span></div>
+      </td>
+      <td class="desc-cell">Instrucción que solicita, inserta, actualiza o elimina información en una base de datos, generalmente mediante SQL.</td>
+      <td>
+        <div class="illus-card">
+          <span class="illus-icon">QRY</span>
+          <span class="illus-caption">Petición de datos</span>
+        </div>
+      </td>
+    </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+    
+      <section class="dict-panel" data-letter="R" style="display:none;">
+        <div class="dict-panel-head">
+          <div>
+            <div class="dict-letter">R</div>
+            <p class="dict-subtitle">Términos que comienzan con la letra R.</p>
+          </div>
+        </div>
+        <div class="table-scroll">
+          <table class="dict-table">
+            <thead>
+              <tr>
+                <th>#</th>
+                <th>Término (Inglés)</th>
+                <th>Término (Español)</th>
+                <th>Definición</th>
+                <th>Ilustración</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr class="dictionary-row">
+      <td class="row-id">01</td>
+      <td>
+        <div class="concept-name">Replication<span class="mono-tag">Base de datos</span></div>
+      </td>
+      <td>
+        <div class="term-es">Replicación<span class="mono-tag">Traducción al español</span></div>
+      </td>
+      <td class="desc-cell">Mecanismo que mantiene copias sincronizadas de una base de datos en varios nodos para mejorar disponibilidad y recuperación.</td>
+      <td>
+        <div class="illus-card">
+          <span class="illus-icon">REP</span>
+          <span class="illus-caption">Copias sincronizadas</span>
+        </div>
+      </td>
+    </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+    
+      <section class="dict-panel" data-letter="S" style="display:none;">
+        <div class="dict-panel-head">
+          <div>
+            <div class="dict-letter">S</div>
+            <p class="dict-subtitle">Términos que comienzan con la letra S.</p>
+          </div>
+        </div>
+        <div class="table-scroll">
+          <table class="dict-table">
+            <thead>
+              <tr>
+                <th>#</th>
+                <th>Término (Inglés)</th>
+                <th>Término (Español)</th>
+                <th>Definición</th>
+                <th>Ilustración</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr class="dictionary-row">
+      <td class="row-id">01</td>
+      <td>
+        <div class="concept-name">Schema<span class="mono-tag">Base de datos</span></div>
+      </td>
+      <td>
+        <div class="term-es">Esquema<span class="mono-tag">Traducción al español</span></div>
+      </td>
+      <td class="desc-cell">Definición estructural de la base de datos: tablas, columnas, tipos, restricciones y relaciones que organizan la información.</td>
+      <td>
+        <div class="illus-card">
+          <span class="illus-icon">SCH</span>
+          <span class="illus-caption">Estructura del sistema</span>
+        </div>
+      </td>
+    </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+    
+      <section class="dict-panel" data-letter="T" style="display:none;">
+        <div class="dict-panel-head">
+          <div>
+            <div class="dict-letter">T</div>
+            <p class="dict-subtitle">Términos que comienzan con la letra T.</p>
+          </div>
+        </div>
+        <div class="table-scroll">
+          <table class="dict-table">
+            <thead>
+              <tr>
+                <th>#</th>
+                <th>Término (Inglés)</th>
+                <th>Término (Español)</th>
+                <th>Definición</th>
+                <th>Ilustración</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr class="dictionary-row">
+      <td class="row-id">01</td>
+      <td>
+        <div class="concept-name">Transaction<span class="mono-tag">Base de datos</span></div>
+      </td>
+      <td>
+        <div class="term-es">Transacción<span class="mono-tag">Traducción al español</span></div>
+      </td>
+      <td class="desc-cell">Conjunto de operaciones que se ejecuta como una unidad lógica. Si algo falla, puede revertirse para no dejar datos inconsistentes.</td>
+      <td>
+        <div class="illus-card">
+          <span class="illus-icon">TX</span>
+          <span class="illus-caption">Todo o nada</span>
+        </div>
+      </td>
+    </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+    
+      <section class="dict-panel" data-letter="U" style="display:none;">
+        <div class="dict-panel-head">
+          <div>
+            <div class="dict-letter">U</div>
+            <p class="dict-subtitle">Términos que comienzan con la letra U.</p>
+          </div>
+        </div>
+        <div class="table-scroll">
+          <table class="dict-table">
+            <thead>
+              <tr>
+                <th>#</th>
+                <th>Término (Inglés)</th>
+                <th>Término (Español)</th>
+                <th>Definición</th>
+                <th>Ilustración</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr class="dictionary-row">
+      <td class="row-id">01</td>
+      <td>
+        <div class="concept-name">Use Case<span class="mono-tag">Arquitectura de software</span></div>
+      </td>
+      <td>
+        <div class="term-es">Caso de uso<span class="mono-tag">Traducción al español</span></div>
+      </td>
+      <td class="desc-cell">Descripción de una interacción entre un actor y el sistema para lograr un objetivo. Ayuda a definir comportamientos y requisitos funcionales.</td>
+      <td>
+        <div class="illus-card">
+          <span class="illus-icon">UC</span>
+          <span class="illus-caption">Actor + objetivo</span>
+        </div>
+      </td>
+    </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+    
+      <section class="dict-panel" data-letter="V" style="display:none;">
+        <div class="dict-panel-head">
+          <div>
+            <div class="dict-letter">V</div>
+            <p class="dict-subtitle">Términos que comienzan con la letra V.</p>
+          </div>
+        </div>
+        <div class="table-scroll">
+          <table class="dict-table">
+            <thead>
+              <tr>
+                <th>#</th>
+                <th>Término (Inglés)</th>
+                <th>Término (Español)</th>
+                <th>Definición</th>
+                <th>Ilustración</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr class="dictionary-row">
+      <td class="row-id">01</td>
+      <td>
+        <div class="concept-name">View<span class="mono-tag">Base de datos</span></div>
+      </td>
+      <td>
+        <div class="term-es">Vista<span class="mono-tag">Traducción al español</span></div>
+      </td>
+      <td class="desc-cell">Tabla virtual generada a partir de una consulta. Sirve para simplificar consultas complejas y controlar el acceso a ciertos datos.</td>
+      <td>
+        <div class="illus-card">
+          <span class="illus-icon">VW</span>
+          <span class="illus-caption">Resultado reutilizable</span>
+        </div>
+      </td>
+    </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+    
+      <section class="dict-panel" data-letter="W" style="display:none;">
+        <div class="dict-panel-head">
+          <div>
+            <div class="dict-letter">W</div>
+            <p class="dict-subtitle">Términos que comienzan con la letra W.</p>
+          </div>
+        </div>
+        <div class="table-scroll">
+          <table class="dict-table">
+            <thead>
+              <tr>
+                <th>#</th>
+                <th>Término (Inglés)</th>
+                <th>Término (Español)</th>
+                <th>Definición</th>
+                <th>Ilustración</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr class="dictionary-row">
+      <td class="row-id">01</td>
+      <td>
+        <div class="concept-name">Write-Ahead Logging<span class="mono-tag">Base de datos</span></div>
+      </td>
+      <td>
+        <div class="term-es">Registro anticipado de escritura<span class="mono-tag">Traducción al español</span></div>
+      </td>
+      <td class="desc-cell">Técnica de recuperación donde los cambios se registran primero en un log antes de escribirse definitivamente, mejorando durabilidad y recuperación.</td>
+      <td>
+        <div class="illus-card">
+          <span class="illus-icon">WAL</span>
+          <span class="illus-caption">Log antes del guardado</span>
+        </div>
+      </td>
+    </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+    
+      <section class="dict-panel" data-letter="X" style="display:none;">
+        <div class="dict-panel-head">
+          <div>
+            <div class="dict-letter">X</div>
+            <p class="dict-subtitle">Términos que comienzan con la letra X.</p>
+          </div>
+        </div>
+        <div class="table-scroll">
+          <table class="dict-table">
+            <thead>
+              <tr>
+                <th>#</th>
+                <th>Término (Inglés)</th>
+                <th>Término (Español)</th>
+                <th>Definición</th>
+                <th>Ilustración</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr class="dictionary-row">
+      <td class="row-id">01</td>
+      <td>
+        <div class="concept-name">XML<span class="mono-tag">Arquitectura / Datos</span></div>
+      </td>
+      <td>
+        <div class="term-es">Lenguaje de marcado extensible<span class="mono-tag">Traducción al español</span></div>
+      </td>
+      <td class="desc-cell">Formato de intercambio de datos estructurados ampliamente usado para configuración, integración y comunicación entre sistemas.</td>
+      <td>
+        <div class="illus-card">
+          <span class="illus-icon">XML</span>
+          <span class="illus-caption">Datos etiquetados</span>
+        </div>
+      </td>
+    </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+    
+      <section class="dict-panel" data-letter="Y" style="display:none;">
+        <div class="dict-panel-head">
+          <div>
+            <div class="dict-letter">Y</div>
+            <p class="dict-subtitle">Términos que comienzan con la letra Y.</p>
+          </div>
+        </div>
+        <div class="table-scroll">
+          <table class="dict-table">
+            <thead>
+              <tr>
+                <th>#</th>
+                <th>Término (Inglés)</th>
+                <th>Término (Español)</th>
+                <th>Definición</th>
+                <th>Ilustración</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr class="dictionary-row">
+      <td class="row-id">01</td>
+      <td>
+        <div class="concept-name">YAML<span class="mono-tag">Arquitectura / Configuración</span></div>
+      </td>
+      <td>
+        <div class="term-es">YAML Ain't Markup Language<span class="mono-tag">Traducción al español</span></div>
+      </td>
+      <td class="desc-cell">Formato de configuración legible para humanos, muy usado en despliegues, contenedores y pipelines por su sintaxis clara y simple.</td>
+      <td>
+        <div class="illus-card">
+          <span class="illus-icon">YML</span>
+          <span class="illus-caption">Configuración legible</span>
+        </div>
+      </td>
+    </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+    
+      <section class="dict-panel" data-letter="Z" style="display:none;">
+        <div class="dict-panel-head">
+          <div>
+            <div class="dict-letter">Z</div>
+            <p class="dict-subtitle">Términos que comienzan con la letra Z.</p>
+          </div>
+        </div>
+        <div class="table-scroll">
+          <table class="dict-table">
+            <thead>
+              <tr>
+                <th>#</th>
+                <th>Término (Inglés)</th>
+                <th>Término (Español)</th>
+                <th>Definición</th>
+                <th>Ilustración</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr class="dictionary-row">
+      <td class="row-id">01</td>
+      <td>
+        <div class="concept-name">Zero Downtime Deployment<span class="mono-tag">Arquitectura / DevOps</span></div>
+      </td>
+      <td>
+        <div class="term-es">Despliegue sin tiempo de inactividad<span class="mono-tag">Traducción al español</span></div>
+      </td>
+      <td class="desc-cell">Estrategia de despliegue que actualiza una aplicación sin interrumpir el servicio para los usuarios, manteniendo continuidad operativa.</td>
+      <td>
+        <div class="illus-card">
+          <span class="illus-icon">0DT</span>
+          <span class="illus-caption">Actualización continua</span>
+        </div>
+      </td>
+    </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+    
+      </div>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+<div class="wrap footer-inner">
+<span class="brand"><span class="brand-mark" style="width:22px;height:22px;"></span>esquema.db</span>
+<span>Diccionario de bases de datos y arquitectura de software · 2026</span>
+</div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

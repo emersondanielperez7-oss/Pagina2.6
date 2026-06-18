@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Modelos - Bases de Datos</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,500&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+<nav>
+<a class="brand" href="index.html">
+<span class="brand-mark"></span>
+      esquema.db
+    </a>
+<div class="nav-links">
+<a href="fundamentos.html">Fundamentos</a>
+<a href="modelos.html">Modelos</a>
+<a href="glosario.html">Diccionario</a>
+<a href="ciclo.html">Ciclo de vida</a>
+</div>
+</nav>
+</header>
+
+<main style="padding-top:100px;">
+<section class="models-band" id="modelos">
+<div class="wrap">
+<div class="section-head reveal">
+<div class="eyebrow">Modelos de datos</div>
+<h2>Tres formas de organizar la misma información</h2>
+<p>No existe un único tipo de base de datos: cada modelo resuelve un problema distinto sobre cómo se relacionan los datos entre sí.</p>
+</div>
+<div class="models-grid">
+<div class="model-card reveal">
+<div class="model-icon">
+<svg fill="none" stroke="var(--steel-bright)" stroke-width="1.6" viewbox="0 0 24 24">
+<rect height="4" rx="1" width="18" x="3" y="4"></rect>
+<rect height="4" rx="1" width="18" x="3" y="10"></rect>
+<rect height="4" rx="1" width="18" x="3" y="16"></rect>
+</svg>
+</div>
+<h3>Relacional</h3>
+<p>Organiza la información en tablas conectadas mediante claves. Prioriza la consistencia y el orden estricto entre datos relacionados.</p>
+<span class="model-tag">PostgreSQL · MySQL</span>
+</div>
+<div class="model-card reveal">
+<div class="model-icon">
+<svg fill="none" stroke="var(--copper-bright)" stroke-width="1.6" viewbox="0 0 24 24">
+<path d="M4 6h7M4 11h4M4 16h6M13 6h7M15 11h5M14 16h7" stroke-linecap="round"></path>
+</svg>
+</div>
+<h3>Documental</h3>
+<p>Guarda cada registro como un documento flexible, sin un esquema fijo. Ideal cuando la estructura de los datos cambia con frecuencia.</p>
+<span class="model-tag">MongoDB · CouchDB</span>
+</div>
+<div class="model-card reveal">
+<div class="model-icon">
+<svg fill="none" stroke="var(--success)" stroke-width="1.6" viewbox="0 0 24 24">
+<circle cx="6" cy="6" r="2.4"></circle><circle cx="18" cy="6" r="2.4"></circle><circle cx="12" cy="18" r="2.4"></circle>
+<path d="M8 7l8 0M7 8l4 8M17 8l-4 8"></path>
+</svg>
+</div>
+<h3>De grafos</h3>
+<p>Modela los datos como nodos y conexiones. Resalta cuando lo importante no es el dato en sí, sino cómo se relaciona con otros.</p>
+<span class="model-tag">Neo4j · ArangoDB</span>
+</div>
+</div>
+</div>
+</section>
+</main>
+
+<footer>
+<div class="wrap footer-inner">
+<span class="brand"><span class="brand-mark" style="width:22px;height:22px;"></span>esquema.db</span>
+<span>Guía de fundamentos de bases de datos · 2026</span>
+</div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

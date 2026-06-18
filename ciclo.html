@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ciclo de vida - Bases de Datos</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,500&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+<nav>
+<a class="brand" href="index.html">
+<span class="brand-mark"></span>
+      esquema.db
+    </a>
+<div class="nav-links">
+<a href="fundamentos.html">Fundamentos</a>
+<a href="modelos.html">Modelos</a>
+<a href="glosario.html">Diccionario</a>
+<a href="ciclo.html">Ciclo de vida</a>
+</div>
+</nav>
+</header>
+
+<main style="padding-top:100px;">
+<section id="ciclo">
+<div class="wrap">
+<div class="section-head reveal">
+<div class="eyebrow">Ciclo de vida de un dato</div>
+<h2>Del formulario a la consulta</h2>
+<p>Un dato pasa por varias etapas reales antes de convertirse en información útil para alguien.</p>
+</div>
+<div class="flow-wrap">
+<div class="flow-track">
+<div class="flow-step reveal">
+<div class="flow-marker">01</div>
+<h4>Captura</h4>
+<p>El dato entra al sistema: un formulario, un sensor o una API lo registra por primera vez.</p>
+</div>
+<div class="flow-step reveal">
+<div class="flow-marker">02</div>
+<h4>Validación</h4>
+<p>El motor revisa tipo, formato y restricciones antes de aceptarlo dentro de la tabla.</p>
+</div>
+<div class="flow-step reveal">
+<div class="flow-marker">03</div>
+<h4>Almacenamiento</h4>
+<p>El registro se escribe en disco y queda disponible para futuras consultas.</p>
+</div>
+<div class="flow-step reveal">
+<div class="flow-marker">04</div>
+<h4>Consulta</h4>
+<p>Una aplicación pide el dato de vuelta mediante SQL, y el motor lo entrega filtrado y ordenado.</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+</main>
+
+<footer>
+<div class="wrap footer-inner">
+<span class="brand"><span class="brand-mark" style="width:22px;height:22px;"></span>esquema.db</span>
+<span>Guía de fundamentos de bases de datos · 2026</span>
+</div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
