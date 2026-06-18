@@ -87,4 +87,8 @@ if (dictionaryShell) {
   }
 
   updateDictionary();
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> 4462a2072dc129b6396c2d06f06b5fa2c2a17bd2
