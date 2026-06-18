@@ -122,13 +122,30 @@
       <td>
         <div class="illus-card">
           <span class="illus-icon">API</span>
-          <span class="illus-caption">Cliente → Gateway → Servicios</span>
+          <span class="illus-caption">    API
+  ┌─────────────────┐
+  │   Aplicación A  │
+  └────────┬────────┘
+          │ Solicitud
+          ▼
+  ┌─────────────────┐
+  │       API       │
+  │ (Intermediario) │
+  └────────┬────────┘
+          │ Envía datos
+          ▼
+  ┌─────────────────┐
+  │   Aplicación B  │
+  │ Base de Datos o │
+  │    Servicio     │
+  └─────────────────┘
+</span>
         </div>
       </td>
     </tr>
 
             </tbody>
-             <tbody>
+              <tbody>
               <tr class="dictionary-row">
       <td class="row-id">02</td>
       <td>
@@ -143,8 +160,8 @@
         <div class="illus-card">
           <span class="illus-icon">B-Tree</span>
           <span class="illus-caption">              
-                  [20 | 40]
-                 /    |    \
+                    [20 | 40]
+                  /    |    \
                 /     |     \</span>
         </div>
       </td>
@@ -163,7 +180,70 @@
       <td class="desc-cell">Estructura de datos utilizada para organizar y buscar información eficientemente en bases de datos.</td>
       <td>
         <div class="illus-card">
-          <span class="illus-icon">B-Tree</span>
+          <span class="illus-icon">AH</span>
+          <span class="illus-caption">              
+                  [20 | 40]
+                 /    |    \
+                /     |     \</span>
+        </div>
+      </td>
+    </tr>
+            </tbody>   <tbody>
+              <tr class="dictionary-row">
+      <td class="row-id">04</td>
+      <td>
+        <div class="concept-name">Asynchrony<span class="mono-tag">Arquitectura de software</span></div>
+      </td>
+      <td>
+        <div class="term-es">Asincronía</div><span class="mono-tag">Traducción al español</span></div>
+          
+      </td>
+      <td class="desc-cell">Capacidad de ejecutar tareas de manera independiente sin esperar a que otras finalicen..</td>
+      <td>
+        <div class="illus-card">
+          <span class="illus-icon">Async</span>
+          <span class="illus-caption">              
+                                  ASINCRONÍA
+
+        ┌──────────────┐
+        │   Usuario    │
+        └──────┬───────┘
+               │ Solicita una tarea
+               ▼
+        ┌──────────────┐
+        │  Aplicación  │
+        └──────┬───────┘
+               │
+      ┌────────┴────────┐
+      │                 │
+      ▼                 ▼
+┌───────────┐    ┌───────────┐
+│ Tarea 1   │    │ Tarea 2   │
+│ (Descarga)│    │ (Mensaje) │
+└───────────┘    └───────────┘
+      │                 │
+      └────────┬────────┘
+               ▼
+        ┌──────────────┐
+        │   Resultado  │
+        └──────────────┘</span>
+        </div>
+      </td>
+    </tr>
+            </tbody>   <tbody>
+              <tr class="dictionary-row">
+      <td class="row-id">05</td>
+      <td>
+        <div class="concept-name">Alta disponibilidad<span class="mono-tag">Base de datos</span></div>
+      </td>
+      <td>
+        <div class="term-es">High Availability</div><span class="mono-tag">Traducción al español</span></div>
+          
+      </td>
+      <td class="desc-cell">Estructura de datos utilizada para organizar y buscar información eficientemente en bases de datos.</td>
+      <td>
+        <div class="illus-card">
+          <span class="illus-icon">AH</span>
           <span class="illus-caption">              
                   [20 | 40]
                  /    |    \
