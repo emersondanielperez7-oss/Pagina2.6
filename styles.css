@@ -1027,3 +1027,40 @@ footer{
     0 0 60px rgba(33,150,196,0.22);
   animation: logo-glow 4s ease-in-out infinite alternate;
 }
+
+/* =============================================================================
+   MEJORA TIPOGRÁFICA — Alineación y legibilidad de textos
+   ============================================================================= */
+
+/* Párrafos de cuerpo e index real: justify solo en pantallas grandes con hyphens */
+.hero p.lead,       /* <--- Selector real para tu párrafo principal */
+.closing p,         /* <--- Selector real para tu cierre */
+.intro-copy p,
+.stack-item p,
+.model-card p,
+.flow-step p,
+.desc-cell,
+.illus-caption,
+.section-head p {
+  text-align: justify;
+  hyphens: auto;
+  -webkit-hyphens: auto;
+  string-set: none;
+  text-justify: inter-word; /* Mejora la distribución del espacio en navegadores modernos */
+}
+
+/* En móvil se cancela el justify porque en columnas estrechas queda peor */
+@media (max-width: 760px) {
+  .hero p.lead,
+  .closing p,
+  .intro-copy p,
+  .stack-item p,
+  .model-card p,
+  .flow-step p,
+  .desc-cell,
+  .illus-caption,
+  .section-head p {
+    text-align: left;
+    hyphens: none;
+  }
+}
