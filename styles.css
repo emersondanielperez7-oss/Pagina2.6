@@ -1064,3 +1064,20 @@ footer{
     hyphens: none;
   }
 }
+
+/* ==========================================================================
+   Optimización del Header (Scroll Dinámico)
+   ========================================================================== */
+header {
+  /* Mantiene el borde base sutil cuando estás arriba de la página */
+  border-bottom: 1px solid rgba(199,212,222,0.14);
+  /* Agrega una transición suave para que el cambio de color no sea brusco */
+  transition: border-color 0.2s ease; 
+  transition: all 0.2s ease; 
+}
+
+/* Esta clase se inyecta eficientemente mediante el nuevo script */
+header.header-scrolled {
+  border-bottom-color: rgba(199,212,222,0.28);
+}
+
