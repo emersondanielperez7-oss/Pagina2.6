@@ -432,165 +432,445 @@
         </div>
       </section>
     
-      <section class="dict-panel" data-letter="I" style="display:none;">
-        <div class="dict-panel-head">
-          <div>
-            <div class="dict-letter">I</div>
-            <p class="dict-subtitle">Términos que comienzan con la letra I.</p>
-          </div>
-        </div>
-        <div class="table-scroll">
-          <table class="dict-table">
-            <thead>
-              <tr>
-                <th>#</th>
-                <th>Término (Inglés)</th>
-                <th>Término (Español)</th>
-                <th>Definición</th>
-                <th>Ilustración</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr class="dictionary-row">
-      <td class="row-id">01</td>
-      <td>
-        <div class="concept-name">Index<span class="mono-tag">Base de datos</span></div>
-      </td>
-      <td>
-        <div class="term-es">Índice<span class="mono-tag">Traducción al español</span></div>
-      </td>
-      <td class="desc-cell">Estructura auxiliar que mejora la velocidad de búsqueda sobre una o varias columnas, aunque puede aumentar el espacio y el costo de escritura.</td>
-      <td>
-        <div class="illus-card">
-          <span class="illus-icon">IDX</span>
-          <span class="illus-caption">Búsqueda optimizada</span>
-        </div>
-      </td>
-    </tr>
-            </tbody>
-          </table>
-        </div>
-      </section>
+      <section class="dict-panel" data-letter="I" style="display:block;">
+  <div class="dict-panel-head">
+    <div>
+      <div class="dict-letter">I</div>
+      <p class="dict-subtitle">Términos fundamentales de Arquitectura de Software, Bases de Datos y Protocolos de Red que comienzan con la letra I.</p>
+    </div>
+  </div>
+  <div class="table-scroll">
+    <table class="dict-table">
+      <thead>
+        <tr>
+          <th>#</th>
+          <th>Término (Inglés)</th>
+          <th>Término (Español)</th>
+          <th>Definición (Bilingüe)</th>
+          <th>Ilustración</th>
+        </tr>
+      </thead>
+      <tbody>
+
+        <tr class="dictionary-row">
+          <td class="row-id">01</td>
+          <td>
+            <div class="concept-name">Idempotency<span class="mono-tag">API / Distributed Systems</span></div>
+          </td>
+          <td>
+            <div class="term-es">Idempotencia<span class="mono-tag">Traducción</span></div>
+          </td>
+          <td class="desc-cell">
+            <strong>EN:</strong> A design property of HTTP methods and distributed systems where an identical request can be executed multiple times sequentially without changing the system state beyond the initial application. Crucial for fault-tolerant architectures and retry mechanisms (e.g., payment gateways) to prevent duplicate operations.<br><br>
+            <strong>ES:</strong> Propiedad de diseño de los métodos HTTP y sistemas distribuidos donde una solicitud idéntica puede ejecutarse múltiples veces de forma secuencial sin alterar el estado del sistema más allá de la aplicación inicial. Crucial para arquitecturas tolerantes a fallos y mecanismos de reintento (ej. pasarelas de pago) para evitar operaciones duplicadas.
+          </td>
+          <td>
+            <div class="illus-card">
+              <span class="illus-icon">ID</span>
+              <span class="illus-caption">Safe Retries</span>
+            </div>
+          </td>
+        </tr>
+
+        <tr class="dictionary-row">
+          <td class="row-id">02</td>
+          <td>
+            <div class="concept-name">Immutable Infrastructure<span class="mono-tag">DevOps / Cloud</span></div>
+          </td>
+          <td>
+            <div class="term-es">Infraestructura Inmutable<span class="mono-tag">Traducción</span></div>
+          </td>
+          <td class="desc-cell">
+            <strong>EN:</strong> An operations management paradigm where infrastructure components (such as servers or containers) are replaced entirely rather than modified or upgraded in place after deployment. This eliminates configuration drift, guarantees environment consistency across lifecycles, and simplifies rollback vectors.<br><br>
+            <strong>ES:</strong> Paradigma de gestión de operaciones donde los componentes de infraestructura (como servidores o contenedores) se reemplazan por completo en lugar de modificarse o actualizarse en el sitio después de su despliegue. Esto elimina la desviación de configuración (configuration drift), garantiza la consistencia del entorno y simplifica los vectores de reversión (rollbacks).
+          </td>
+          <td>
+            <div class="illus-card">
+              <span class="illus-icon">IM</span>
+              <span class="illus-caption">Replace, Don't Patch</span>
+            </div>
+          </td>
+        </tr>
+
+        <tr class="dictionary-row">
+          <td class="row-id">03</td>
+          <td>
+            <div class="concept-name">Index<span class="mono-tag">Database Engines</span></div>
+          </td>
+          <td>
+            <div class="term-es">Índice<span class="mono-tag">Traducción</span></div>
+          </td>
+          <td class="desc-cell">
+            <strong>EN:</strong> An auxiliary, persistent data structure (typically a B-Tree or Hash map) that optimizes query performance by minimizing the number of disk block access overhead operations required to locate specific target rows. While accelerating read constraints, indices introduce a computational trade-off by adding overhead to write operations.<br><br>
+            <strong>ES:</strong> Estructura de datos auxiliar y persistente (típicamente un árbol B-Tree o mapa Hash) que optimiza el rendimiento de las consultas al minimizar el número de operaciones de acceso a bloques de disco requeridas para localizar filas específicas. Aunque acelera las lecturas, introduce una penalización computacional en las operaciones de escritura.
+          </td>
+          <td>
+            <div class="illus-card">
+              <span class="illus-icon">IX</span>
+              <span class="illus-caption">Fast Data Lookup</span>
+            </div>
+          </td>
+        </tr>
+
+        <tr class="dictionary-row">
+          <td class="row-id">04</td>
+          <td>
+            <div class="concept-name">Inversion of Control (IoC)<span class="mono-tag">Design Patterns</span></div>
+          </td>
+          <td>
+            <div class="term-es">Inversión de Control<span class="mono-tag">Traducción</span></div>
+          </td>
+          <td class="desc-cell">
+            <strong>EN:</strong> An architectural design principle that externalizes the program execution flow control, delegating object lifecycle management and dependency orchestration to a specialized framework engine. Frequently implemented via Dependency Injection (DI) patterns to enforce loose coupling constraints.<br><br>
+            <strong>ES:</strong> Principio de diseño de software que externaliza el control del flujo de ejecución del programa, delegando la gestión del ciclo de vida de los objetos y la orquestación de dependencias a un framework especializado. Frecuentemente implementado mediante patrones de Inyección de Dependencias (DI) para imponer un acoplamiento débil.
+          </td>
+          <td>
+            <div class="illus-card">
+              <span class="illus-icon">IC</span>
+              <span class="illus-caption">Loose Coupling</span>
+            </div>
+          </td>
+        </tr>
+
+        <tr class="dictionary-row">
+          <td class="row-id">05</td>
+          <td>
+            <div class="concept-name">IP Address (Internet Protocol Address)<span class="mono-tag">Networking</span></div>
+          </td>
+          <td>
+            <div class="term-es">Dirección IP<span class="mono-tag">Traducción</span></div>
+          </td>
+          <td class="desc-cell">
+            <strong>EN:</strong> A unique numerical identifier assigned to each node interface participating within a computer network utilizing the Internet Protocol suite. It structures the global routing topography and logical endpoint targeting, distributed predominantly as 32-bit (IPv4) or 128-bit (IPv6) architectures.<br><br>
+            <strong>ES:</strong> Identificador numérico único asignado a cada interfaz de nodo participante en una red informática que utiliza la suite de protocolos de Internet. Estructura la topografía de enrutamiento global y el direccionamiento lógico de puntos finales, distribuida predominantemente en arquitecturas de 32 bits (IPv4) o 128 bits (IPv6).
+          </td>
+          <td>
+            <div class="illus-card">
+              <span class="illus-icon">IP</span>
+              <span class="illus-caption">Network Addressing</span>
+            </div>
+          </td>
+        </tr>
+
+      </tbody>
+    </table>
+  </div>
+</section>
     
-      <section class="dict-panel" data-letter="J" style="display:none;">
-        <div class="dict-panel-head">
-          <div>
-            <div class="dict-letter">J</div>
-            <p class="dict-subtitle">Términos que comienzan con la letra J.</p>
-          </div>
-        </div>
-        <div class="table-scroll">
-          <table class="dict-table">
-            <thead>
-              <tr>
-                <th>#</th>
-                <th>Término (Inglés)</th>
-                <th>Término (Español)</th>
-                <th>Definición</th>
-                <th>Ilustración</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr class="dictionary-row">
-      <td class="row-id">01</td>
-      <td>
-        <div class="concept-name">JOIN<span class="mono-tag">Base de datos</span></div>
-      </td>
-      <td>
-        <div class="term-es">Combinación de tablas<span class="mono-tag">Traducción al español</span></div>
-      </td>
-      <td class="desc-cell">Operación SQL que une filas de dos o más tablas según una condición de relación, permitiendo consultar información distribuida.</td>
-      <td>
-        <div class="illus-card">
-          <span class="illus-icon">JN</span>
-          <span class="illus-caption">Cruce de registros</span>
-        </div>
-      </td>
-    </tr>
-            </tbody>
-          </table>
-        </div>
-      </section>
+      <section class="dict-panel" data-letter="J" style="display:block;">
+  <div class="dict-panel-head">
+    <div>
+      <div class="dict-letter">J</div>
+      <p class="dict-subtitle">Términos fundamentales de Desarrollo de Software y Bases de Datos que comienzan con la letra J.</p>
+    </div>
+  </div>
+  <div class="table-scroll">
+    <table class="dict-table">
+      <thead>
+        <tr>
+          <th>#</th>
+          <th>Término (Inglés)</th>
+          <th>Término (Español)</th>
+          <th>Definición (Bilingüe)</th>
+          <th>Ilustración</th>
+        </tr>
+      </thead>
+      <tbody>
+
+        <tr class="dictionary-row">
+          <td class="row-id">01</td>
+          <td>
+            <div class="concept-name">JSON (JavaScript Object Notation)<span class="mono-tag">Data Serialization</span></div>
+          </td>
+          <td>
+            <div class="term-es">Notación de Objetos de JavaScript<span class="mono-tag">Traducción</span></div>
+          </td>
+          <td class="desc-cell">
+            <strong>EN:</strong> A lightweight, text-based, human-readable data-interchange format. Built on a key-value and ordered list structure, it has become the de facto standard for data transmission in modern RESTful Web APIs, microservices architectures, and NoSQL document stores due to its minimal parsing overhead compared to XML.<br><br>
+            <strong>ES:</strong> Formato ligero de intercambio de datos basado en texto y de fácil lectura humana. Basado en una estructura de clave-valor y listas ordenadas, se ha convertido en el estándar de facto para la transmisión de datos en APIs Web RESTful modernas, arquitecturas de microservicios y bases de datos NoSQL basadas en documentos debido a su mínima sobrecarga de procesamiento en comparación con XML.
+          </td>
+          <td>
+            <div class="illus-card">
+              <span class="illus-icon">JS</span>
+              <span class="illus-caption">Key-Value Payload</span>
+            </div>
+          </td>
+        </tr>
+
+        <tr class="dictionary-row">
+          <td class="row-id">02</td>
+          <td>
+            <div class="concept-name">JWT (JSON Web Token)<span class="mono-tag">Security / Auth</span></div>
+          </td>
+          <td>
+            <div class="term-es">Token Web de JSON<span class="mono-tag">Traducción</span></div>
+          </td>
+          <td class="desc-cell">
+            <strong>EN:</strong> An open standard (RFC 7519) that defines a compact, self-contained, and cryptographically signed URL-safe string structure for securely transmitting verified claims between parties. Widely utilized in stateless authentication mechanisms and OAuth2 frameworks to preserve identity without session state store dependencies.<br><br>
+            <strong>ES:</strong> Estándar abierto (RFC 7519) que define una estructura de cadena segura para URLs, compacta y autocontenida, firmada criptográficamente para transmitir de forma segura afirmaciones verificadas entre partes. Ampliamente utilizado en mecanismos de autenticación sin estado (stateless) y entornos OAuth2 para preservar la identidad sin depender del almacenamiento de estados de sesión.
+          </td>
+          <td>
+            <div class="illus-card">
+              <span class="illus-icon">JW</span>
+              <span class="illus-caption">Stateless Token</span>
+            </div>
+          </td>
+        </tr>
+
+        <tr class="dictionary-row">
+          <td class="row-id">03</td>
+          <td>
+            <div class="concept-name">JDBC (Java Database Connectivity)<span class="mono-tag">Data Access API</span></div>
+          </td>
+          <td>
+            <div class="term-es">Conectividad de Bases de Datos de Java<span class="mono-tag">Traducción</span></div>
+          </td>
+          <td class="desc-cell">
+            <strong>EN:</strong> An industry-standard Java API specification that abstracts application-level connections to data storage layers. It enables uniform execution of SQL queries, data manipulation, and transaction coordination across diverse relational database management systems (RDBMS) via vendor-specific drivers.<br><br>
+            <strong>ES:</strong> Especificación estándar de la API de Java que abstrae las conexiones a nivel de aplicación con las capas de almacenamiento de datos. Permite la ejecución uniforme de consultas SQL, manipulación de datos y coordinación de transacciones a través de diversos sistemas de gestión de bases de datos relacionales (RDBMS) mediante controladores específicos del proveedor.
+          </td>
+          <td>
+            <div class="illus-card">
+              <span class="illus-icon">JD</span>
+              <span class="illus-caption">DB Driver Abstraction</span>
+            </div>
+          </td>
+        </tr>
+
+      </tbody>
+    </table>
+  </div>
+</section>
     
-      <section class="dict-panel" data-letter="K" style="display:none;">
-        <div class="dict-panel-head">
-          <div>
-            <div class="dict-letter">K</div>
-            <p class="dict-subtitle">Términos que comienzan con la letra K.</p>
-          </div>
-        </div>
-        <div class="table-scroll">
-          <table class="dict-table">
-            <thead>
-              <tr>
-                <th>#</th>
-                <th>Término (Inglés)</th>
-                <th>Término (Español)</th>
-                <th>Definición</th>
-                <th>Ilustración</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr class="dictionary-row">
-      <td class="row-id">01</td>
-      <td>
-        <div class="concept-name">Key<span class="mono-tag">Base de datos</span></div>
-      </td>
-      <td>
-        <div class="term-es">Clave<span class="mono-tag">Traducción al español</span></div>
-      </td>
-      <td class="desc-cell">Atributo usado para identificar registros o relacionar tablas. Puede ser primaria, foránea, candidata o compuesta.</td>
-      <td>
-        <div class="illus-card">
-          <span class="illus-icon">KEY</span>
-          <span class="illus-caption">Identificación de datos</span>
-        </div>
-      </td>
-    </tr>
-            </tbody>
-          </table>
-        </div>
-      </section>
-    
-      <section class="dict-panel" data-letter="L" style="display:none;">
-        <div class="dict-panel-head">
-          <div>
-            <div class="dict-letter">L</div>
-            <p class="dict-subtitle">Términos que comienzan con la letra L.</p>
-          </div>
-        </div>
-        <div class="table-scroll">
-          <table class="dict-table">
-            <thead>
-              <tr>
-                <th>#</th>
-                <th>Término (Inglés)</th>
-                <th>Término (Español)</th>
-                <th>Definición</th>
-                <th>Ilustración</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr class="dictionary-row">
-      <td class="row-id">01</td>
-      <td>
-        <div class="concept-name">Load Balancer<span class="mono-tag">Arquitectura de software</span></div>
-      </td>
-      <td>
-        <div class="term-es">Balanceador de carga<span class="mono-tag">Traducción al español</span></div>
-      </td>
-      <td class="desc-cell">Componente que distribuye solicitudes entre varios servidores o instancias para mejorar el rendimiento, la disponibilidad y la tolerancia a fallos.</td>
-      <td>
-        <div class="illus-card">
-          <span class="illus-icon">L/B</span>
-          <span class="illus-caption">Tráfico distribuido</span>
-        </div>
-      </td>
-    </tr>
-            </tbody>
-          </table>
-        </div>
-      </section>
+     <section class="dict-panel" data-letter="K" style="display:block;">
+  <div class="dict-panel-head">
+    <div>
+      <div class="dict-letter">K</div>
+      <p class="dict-subtitle">Términos fundamentales de Arquitectura de Sistemas, Seguridad e Infraestructura que comienzan con la letra K.</p>
+    </div>
+  </div>
+  <div class="table-scroll">
+    <table class="dict-table">
+      <thead>
+        <tr>
+          <th>#</th>
+          <th>Término (Inglés)</th>
+          <th>Término (Español)</th>
+          <th>Definición (Bilingüe)</th>
+          <th>Ilustración</th>
+        </tr>
+      </thead>
+      <tbody>
+
+        <tr class="dictionary-row">
+          <td class="row-id">01</td>
+          <td>
+            <div class="concept-name">Kubernetes (K8s)<span class="mono-tag">Container Orchestration</span></div>
+          </td>
+          <td>
+            <div class="term-es">Kubernetes<span class="mono-tag">Traducción</span></div>
+          </td>
+          <td class="desc-cell">
+            <strong>EN:</strong> An open-source container orchestration platform designed to automate the deployment, scaling, and management of containerized applications. It abstracts physical infrastructure, offering declarative configuration, automated service discovery, load balancing, self-healing capabilities, and horizontal scaling across multi-cloud environments.<br><br>
+            <strong>ES:</strong> Plataforma de código abierto para la orquestación de contenedores diseñada para automatizar el despliegue, escalado y gestión de aplicaciones contenedorizadas. Abstrae la infraestructura física ofreciendo configuración declarativa, descubrimiento automático de servicios, balanceo de carga, autoreparación (self-healing) y escalado horizontal en entornos multi-nube.
+          </td>
+          <td>
+            <div class="illus-card">
+              <span class="illus-icon">K8</span>
+              <span class="illus-caption">Cluster Orchestrator</span>
+            </div>
+          </td>
+        </tr>
+
+        <tr class="dictionary-row">
+          <td class="row-id">02</td>
+          <td>
+            <div class="concept-name">Kerberos<span class="mono-tag">Network Authentication</span></div>
+          </td>
+          <td>
+            <div class="term-es">Kerberos<span class="mono-tag">Traducción</span></div>
+          </td>
+          <td class="desc-cell">
+            <strong>EN:</strong> A computer network authentication protocol that works on the basis of tickets to allow nodes communicating over a non-secure network to prove their identity to one another in a secure manner. It relies heavily on symmetric cryptography and a trusted Key Distribution Center (KDC) to eliminate transmission of plain-text credentials.<br><br>
+            <strong>ES:</strong> Protocolo de autenticación de red informática que funciona mediante "tickets" para permitir que los nodos que se comunican a través de una red insegura demuestren su identidad entre sí de forma segura. Se basa firmemente en criptografía simétrica y en un Centro de Distribución de Claves (KDC) de confianza para eliminar la transmisión de credenciales en texto plano.
+          </td>
+          <td>
+            <div class="illus-card">
+              <span class="illus-icon">KB</span>
+              <span class="illus-caption">Ticket Authentication</span>
+            </div>
+          </td>
+        </tr>
+
+        <tr class="dictionary-row">
+          <td class="row-id">03</td>
+          <td>
+            <div class="concept-name">Key-Value Store<span class="mono-tag">NoSQL Database</span></div>
+          </td>
+          <td>
+            <div class="term-es">Almacenamiento Clave-Valor<span class="mono-tag">Traducción</span></div>
+          </td>
+          <td class="desc-cell">
+            <strong>EN:</strong> A non-relational database paradigm that uses a simple associative array as its primary data model, where each unique key maps to a specific value blob. Highly optimized for massive horizontal scalability, ultra-low latency reads, and in-memory caching systems (e.g., Redis, DynamoDB) where complex relational joins are unnecessary.<br><br>
+            <strong>ES:</strong> Paradigma de base de datos no relacional que utiliza una matriz asociativa simple como modelo de datos primario, donde cada clave única se asocia a un bloque de valor específico. Altamente optimizado para escalabilidad horizontal masiva, lecturas de ultra baja latencia y sistemas de caché en memoria (ej. Redis, DynamoDB) donde las uniones relacionales complejas son innecesarias.
+          </td>
+          <td>
+            <div class="illus-card">
+              <span class="illus-icon">KV</span>
+              <span class="illus-caption">O(1) Data Lookup</span>
+            </div>
+          </td>
+        </tr>
+
+      </tbody>
+    </table>
+  </div>
+</section>
+
+      <section class="dict-panel" data-letter="L" style="display:block;">
+  <div class="dict-panel-head">
+    <div>
+      <div class="dict-letter">L</div>
+      <p class="dict-subtitle">Términos fundamentales de Arquitectura de Sistemas, Concurrencia, Rendimiento y Estructuras de Datos que comienzan con la letra L.</p>
+    </div>
+  </div>
+  <div class="table-scroll">
+    <table class="dict-table">
+      <thead>
+        <tr>
+          <th>#</th>
+          <th>Término (Inglés)</th>
+          <th>Término (Español)</th>
+          <th>Definición (Bilingüe)</th>
+          <th>Ilustración</th>
+        </tr>
+      </thead>
+      <tbody>
+
+        <tr class="dictionary-row">
+          <td class="row-id">01</td>
+          <td>
+            <div class="concept-name">Latency<span class="mono-tag">System Performance</span></div>
+          </td>
+          <td>
+            <div class="term-es">Latencia<span class="mono-tag">Traducción</span></div>
+          </td>
+          <td class="desc-cell">
+            <strong>EN:</strong> The time interval, typically measured in milliseconds, representing the operational delay between a client stimulus or computation request and its corresponding system response. In distributed infrastructures, it is heavily influenced by physical propagation delay, serialization overhead, and routing hops across network layers.<br><br>
+            <strong>ES:</strong> El intervalo de tiempo, típicamente medido en milisegundos, que representa el retraso operativo entre un estímulo del cliente o solicitud de cómputo y su correspondiente respuesta del sistema. En infraestructuras distribuidas, está fuertemente influenciada por el retraso de propagación física, la sobrecarga de serialización y los saltos de enrutamiento a través de las capas de red.
+          </td>
+          <td>
+            <div class="illus-card">
+              <span class="illus-icon">LT</span>
+              <span class="illus-caption">Response Delay</span>
+            </div>
+          </td>
+        </tr>
+
+        <tr class="dictionary-row">
+          <td class="row-id">02</td>
+          <td>
+            <div class="concept-name">Lazy Loading<span class="mono-tag">Design Patterns</span></div>
+          </td>
+          <td>
+            <div class="term-es">Carga Diferida<span class="mono-tag">Traducción</span></div>
+          </td>
+          <td class="desc-cell">
+            <strong>EN:</strong> A software design pattern that defers the initialization or loading of an object, data structure, or sub-resource until the exact point in time when it is explicitly needed by the execution context. This optimization strategy reduces startup resource consumption, conserves memory bandwidth, and minimizes initial rendering blocking.<br><br>
+            <strong>ES:</strong> Patrón de diseño de software que pospone la inicialización o carga de un objeto, estructura de datos o sub-recurso hasta el momento exacto en que el contexto de ejecución lo requiere explícitamente. Esta estrategia de optimización reduce el consumo de recursos al inicio, conserva el ancho de banda de la memoria y minimiza el bloqueo del renderizado inicial.
+          </td>
+          <td>
+            <div class="illus-card">
+              <span class="illus-icon">LL</span>
+              <span class="illus-caption">On-Demand Fetch</span>
+            </div>
+          </td>
+        </tr>
+
+        <tr class="dictionary-row">
+          <td class="row-id">03</td>
+          <td>
+            <div class="concept-name">LIFO (Last-In, First-Out)<span class="mono-tag">Data Structures</span></div>
+          </td>
+          <td>
+            <div class="term-es">Último en Entrar, Primero en Salir<span class="mono-tag">Traducción</span></div>
+          </td>
+          <td class="desc-cell">
+            <strong>EN:</strong> An abstract data processing restriction or structural mechanism (such as a stack) where the last computational element appended to the collection is designated as the primary entity to be popped or processed first. Crucial for managing thread execution stack frames, recursion flow mechanics, and state undo histories.<br><br>
+            <strong>ES:</strong> Restricción abstracta de procesamiento de datos o mecanismo estructural (como una pila/stack) donde el último elemento computacional añadido a la colección se designa como la primera entidad a ser extraída o procesada. Crucial para la gestión de tramas de ejecución de hilos (stack frames), mecánicas de flujo de recursión e historiales de deshacer estados.
+          </td>
+          <td>
+            <div class="illus-card">
+              <span class="illus-icon">LF</span>
+              <span class="illus-caption">Stack Push/Pop</span>
+            </div>
+          </td>
+        </tr>
+
+        <tr class="dictionary-row">
+          <td class="row-id">04</td>
+          <td>
+            <div class="concept-name">Linearizability<span class="mono-tag">Concurrency / Distributed Systems</span></div>
+          </td>
+          <td>
+            <div class="term-es">Linealizabilidad<span class="mono-tag">Traducción</span></div>
+          </td>
+          <td class="desc-cell">
+            <strong>EN:</strong> One of the strongest consistency models for concurrent operations, guaranteeing that every read and write operation appears to take effect instantaneously at a discrete point in time between its invocation and its response. It ensures that all system actors view updates in exactly the same chronological sequence, preventing stale data anomalies.<br><br>
+            <strong>ES:</strong> Uno de los modelos de consistencia más estrictos para operaciones concurrentes, el cual garantiza que cada operación de lectura y escritura parece tener efecto instantáneamente en un punto discreto en el tiempo entre su invocación y su respuesta. Asegura que todos los actores del sistema vean las actualizaciones exactamente en la misma secuencia cronológica, evitando anomalías de datos obsoletos.
+          </td>
+          <td>
+            <div class="illus-card">
+              <span class="illus-icon">LZ</span>
+              <span class="illus-caption">Strict Time Ordering</span>
+            </div>
+          </td>
+        </tr>
+
+        <tr class="dictionary-row">
+          <td class="row-id">05</td>
+          <td>
+            <div class="concept-name">Load Balancer<span class="mono-tag">Network Architecture</span></div>
+          </td>
+          <td>
+            <div class="term-es">Balanceador de Carga<span class="mono-tag">Traducción</span></div>
+          </td>
+          <td class="desc-cell">
+            <strong>EN:</strong> A critical infrastructure routing component positioned between clients and server pools that distributes incoming network or application traffic across multiple backend computing nodes. It optimizes resource utilization, maximizes throughput, minimizes response time, and guarantees high availability via fault isolation and health monitoring.<br><br>
+            <strong>ES:</strong> Componente crítico de enrutamiento de infraestructura posicionado entre los clientes y los grupos de servidores que distribuye el tráfico de red o de aplicaciones entrante a través de múltiples nodos de computación en el backend. Optimiza el uso de recursos, maximiza el rendimiento, minimiza el tiempo de respuesta y garantiza alta disponibilidad mediante monitoreo de salud y aislamiento de fallos.
+          </td>
+          <td>
+            <div class="illus-card">
+              <span class="illus-icon">LB</span>
+              <span class="illus-caption">Traffic Routing</span>
+            </div>
+          </td>
+        </tr>
+
+        <tr class="dictionary-row">
+          <td class="row-id">06</td>
+          <td>
+            <div class="concept-name">Local Storage<span class="mono-tag">Web Storage API</span></div>
+          </td>
+          <td>
+            <div class="term-es">Almacenamiento Local<span class="mono-tag">Traducción</span></div>
+          </td>
+          <td class="desc-cell">
+            <strong>EN:</strong> A web storage mechanism provided by modern browsers that allows web applications to persist synchronous key-value data directly in the client's user agent. Unlike cookies, data stored in Local Storage has no expiration date, offers a larger capacity threshold (~5MB), and is never automatically transmitted to the server via HTTP headers.<br><br>
+            <strong>ES:</strong> Mecanismo de almacenamiento web provisto por los navegadores modernos que permite a las aplicaciones web persistir datos síncronos de clave-valor directamente en el agente de usuario del cliente. A diferencia de las cookies, los datos almacenados no tienen fecha de expiración, ofrecen un límite de capacidad mayor (~5MB) y nunca se transmiten automáticamente al servidor a través de cabeceras HTTP.
+          </td>
+          <td>
+            <div class="illus-card">
+              <span class="illus-icon">LS</span>
+              <span class="illus-caption">Persistent Client Cache</span>
+            </div>
+          </td>
+        </tr>
+
+      </tbody>
+    </table>
+  </div>
+</section>
     
      <section class="dict-panel" data-letter="M" style="display:block;">
   <div class="dict-panel-head">
@@ -1446,7 +1726,7 @@
             </tbody>
           </table>
         </div>
-      </section>  s
+      </section>  
     
       <section class="dict-panel" data-letter="V" style="display:none;">
         <div class="dict-panel-head">
@@ -1488,45 +1768,110 @@
         </div>
       </section>
     
-      <section class="dict-panel" data-letter="W" style="display:none;">
-        <div class="dict-panel-head">
-          <div>
-            <div class="dict-letter">W</div>
-            <p class="dict-subtitle">Términos que comienzan con la letra W.</p>
-          </div>
-        </div>
-        <div class="table-scroll">
-          <table class="dict-table">
-            <thead>
-              <tr>
-                <th>#</th>
-                <th>Término (Inglés)</th>
-                <th>Término (Español)</th>
-                <th>Definición</th>
-                <th>Ilustración</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr class="dictionary-row">
-      <td class="row-id">01</td>
-      <td>
-        <div class="concept-name">Write-Ahead Logging<span class="mono-tag">Base de datos</span></div>
-      </td>
-      <td>
-        <div class="term-es">Registro anticipado de escritura<span class="mono-tag">Traducción al español</span></div>
-      </td>
-      <td class="desc-cell">Técnica de recuperación donde los cambios se registran primero en un log antes de escribirse definitivamente, mejorando durabilidad y recuperación.</td>
-      <td>
-        <div class="illus-card">
-          <span class="illus-icon">WAL</span>
-          <span class="illus-caption">Log antes del guardado</span>
-        </div>
-      </td>
-    </tr>
-            </tbody>
-          </table>
-        </div>
-      </section>
+      <section class="dict-panel" data-letter="W" style="display:block;">
+  <div class="dict-panel-head">
+    <div>
+      <div class="dict-letter">W</div>
+      <p class="dict-subtitle">Términos fundamentales de Persistencia, Protocolos de Red y Entornos de Ejecución que comienzan con la letra W.</p>
+    </div>
+  </div>
+  <div class="table-scroll">
+    <table class="dict-table">
+      <thead>
+        <tr>
+          <th>#</th>
+          <th>Término (Inglés)</th>
+          <th>Término (Español)</th>
+          <th>Definición (Bilingüe)</th>
+          <th>Ilustración</th>
+        </tr>
+      </thead>
+      <tbody>
+
+        <tr class="dictionary-row">
+          <td class="row-id">01</td>
+          <td>
+            <div class="concept-name">Write-Ahead Logging (WAL)<span class="mono-tag">Database Engines</span></div>
+          </td>
+          <td>
+            <div class="term-es">Registro Anticipado de Escritura<span class="mono-tag">Traducción</span></div>
+          </td>
+          <td class="desc-cell">
+            <strong>EN:</strong> A core transaction recovery technique where data modifications are sequentially appended to a dedicated, persistent log file before the actual changes are applied to the database's primary storage pages. This protocol strictly guarantees the Atomicity and Durability (ACID) properties in the event of an abrupt system crash.<br><br>
+            <strong>ES:</strong> Técnica central de recuperación de transacciones donde las modificaciones de datos se anexan secuencialmente a un archivo de registro (log) persistente dedicado antes de que los cambios reales se apliquen a las páginas de almacenamiento primario de la base de datos. Este protocolo garantiza estrictamente las propiedades de Atomicidad y Durabilidad (ACID) en caso de un fallo abrupto del sistema.
+          </td>
+          <td>
+            <div class="illus-card">
+              <span class="illus-icon">WL</span>
+              <span class="illus-caption">Log-First Persistence</span>
+            </div>
+          </td>
+        </tr>
+
+        <tr class="dictionary-row">
+          <td class="row-id">02</td>
+          <td>
+            <div class="concept-name">WebSockets<span class="mono-tag">Network Protocols</span></div>
+          </td>
+          <td>
+            <div class="term-es">WebSockets<span class="mono-tag">Traducción</span></div>
+          </td>
+          <td class="desc-cell">
+            <strong>EN:</strong> A network communication protocol providing full-duplex, bi-directional transmission channels over a single, long-lived TCP connection. Initiated via an HTTP handshake upgrade, it eliminates the substantial polling and header overhead characteristic of traditional request-response REST models in real-time streaming architectures.<br><br>
+            <strong>ES:</strong> Protocolo de comunicación de red que proporciona canales de transmisión bidireccionales y full-duplex sobre una única conexión TCP de larga duración. Iniciado mediante una actualización (upgrade) de handshake HTTP, elimina la sobrecarga sustancial de cabeceras y sondeos (polling) característica de los modelos REST tradicionales de solicitud-respuesta en arquitecturas de tiempo real.
+          </td>
+          <td>
+            <div class="illus-card">
+              <span class="illus-icon">WS</span>
+              <span class="illus-caption">Full-Duplex TCP</span>
+            </div>
+          </td>
+        </tr>
+
+        <tr class="dictionary-row">
+          <td class="row-id">03</td>
+          <td>
+            <div class="concept-name">WebAssembly (Wasm)<span class="mono-tag">Runtime Environments</span></div>
+          </td>
+          <td>
+            <div class="term-es">WebAssembly<span class="mono-tag">Traducción</span></div>
+          </td>
+          <td class="desc-cell">
+            <strong>EN:</strong> A low-level binary instruction format designed as a portable compilation target for high-performance languages like C, C++, and Rust. Running inside isolated sandboxes within modern web browsers alongside JavaScript, it delivers near-native execution speed for intensive client-side algorithmic computations.<br><br>
+            <strong>ES:</strong> Formato de instrucciones binarias de bajo nivel diseñado como un objetivo de compilación portátil para lenguajes de alto rendimiento como C, C++ y Rust. Se ejecuta dentro de entornos aislados (sandboxes) en navegadores web modernos junto a JavaScript, ofreciendo una velocidad de ejecución cercana a la nativa para cómputos algorítmicos intensivos en el cliente.
+          </td>
+          <td>
+            <div class="illus-card">
+              <span class="illus-icon">WA</span>
+              <span class="illus-caption">Bytecode Sandbox</span>
+            </div>
+          </td>
+        </tr>
+
+        <tr class="dictionary-row">
+          <td class="row-id">04</td>
+          <td>
+            <div class="concept-name">Webhook<span class="mono-tag">System Integration</span></div>
+          </td>
+          <td>
+            <div class="term-es">Webhook<span class="mono-tag">Traducción</span></div>
+          </td>
+          <td class="desc-cell">
+            <strong>EN:</strong> An event-driven architectural mechanism allowing one application to provide real-time, asynchronous data payloads to another via user-defined HTTP POST requests. Triggered automatically by a state change or lifecycle event in the source system, it implements an inversion of control that avoids continuous backend polling operations.<br><br>
+            <strong>ES:</strong> Mecanismo arquitectónico basado en eventos que permite a una aplicación proporcionar cargas de datos asíncronas en tiempo real a otra mediante solicitudes HTTP POST definidas por el usuario. Activado automáticamente por un cambio de estado o evento de ciclo de vida en el sistema origen, implementa una inversión de control que evita operaciones continuas de sondeo (polling) en el backend.
+          </td>
+          <td>
+            <div class="illus-card">
+              <span class="illus-icon">WH</span>
+              <span class="illus-caption">Event Inversion</span>
+            </div>
+          </td>
+        </tr>
+
+      </tbody>
+    </table>
+  </div>
+</section>
     
       <section class="dict-panel" data-letter="X" style="display:block;">
   <div class="dict-panel-head">
