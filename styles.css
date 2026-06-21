@@ -1045,7 +1045,7 @@ footer{
   text-align: justify;
   hyphens: auto;
   -webkit-hyphens: auto;
-  string-set: none;
+string-set: nome
   text-justify: inter-word; /* Mejora la distribución del espacio en navegadores modernos */
 }
 
